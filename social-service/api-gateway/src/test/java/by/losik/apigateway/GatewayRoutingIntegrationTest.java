@@ -47,8 +47,8 @@ class GatewayRoutingIntegrationTest {
 
     @Container
     static GenericContainer<?> mockActivityService = new GenericContainer<>("mockserver/mockserver:5.15.0")
-            .withExposedPorts(8080)
-            .withCommand("-serverPort 8080 -logLevel INFO")
+            .withExposedPorts(8085)
+            .withCommand("-serverPort 8085 -logLevel INFO")
             .waitingFor(Wait.forLogMessage(".*8085 started on port: 8085.*", 1));
 
     @DynamicPropertySource
