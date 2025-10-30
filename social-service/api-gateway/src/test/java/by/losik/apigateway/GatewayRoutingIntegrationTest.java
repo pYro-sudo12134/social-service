@@ -97,7 +97,7 @@ class GatewayRoutingIntegrationTest {
     void userServiceRouting_ShouldWork() {
         webTestClient.get()
                 .uri("/api/users")
-                .header("Authorization", "Bearer mock-jwt-token-for-testing")
+                .header("Authorization", "Bearer stub-jwt-token-for-testing")
                 .exchange()
                 .expectStatus().isUnauthorized();
     }
@@ -106,7 +106,7 @@ class GatewayRoutingIntegrationTest {
     void imageServiceRouting_ShouldWork() {
         webTestClient.get()
                 .uri("/api/images")
-                .header("Authorization", "Bearer mock-jwt-token-for-testing")
+                .header("Authorization", "Bearer stub-jwt-token-for-testing")
                 .exchange()
                 .expectStatus().isUnauthorized();
     }
@@ -115,7 +115,7 @@ class GatewayRoutingIntegrationTest {
     void commentServiceRouting_ShouldWork() {
         webTestClient.get()
                 .uri("/api/comments")
-                .header("Authorization", "Bearer mock-jwt-token-for-testing")
+                .header("Authorization", "Bearer stub-jwt-token-for-testing")
                 .exchange()
                 .expectStatus().isUnauthorized();
     }
@@ -124,7 +124,7 @@ class GatewayRoutingIntegrationTest {
     void likeServiceRouting_ShouldWork() {
         webTestClient.get()
                 .uri("/api/likes")
-                .header("Authorization", "Bearer mock-jwt-token-for-testing")
+                .header("Authorization", "Bearer stub-jwt-token-for-testing")
                 .exchange()
                 .expectStatus().isUnauthorized();
     }
@@ -133,7 +133,7 @@ class GatewayRoutingIntegrationTest {
     void activityServiceRouting_ShouldWork() {
         webTestClient.get()
                 .uri("/api/activity")
-                .header("Authorization", "Bearer mock-jwt-token-for-testing")
+                .header("Authorization", "Bearer stub-jwt-token-for-testing")
                 .exchange()
                 .expectStatus().isUnauthorized();
     }
